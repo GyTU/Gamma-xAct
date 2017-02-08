@@ -1,0 +1,767 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     21922,        757]
+NotebookOptionsPosition[     19263,        666]
+NotebookOutlinePosition[     19625,        682]
+CellTagsIndexPosition[     19582,        679]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"<<", "Gamma.m"}]], "Input",
+ CellChangeTimes->{{3.6953849076537046`*^9, 3.695384910384595*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.69538491111858*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package xAct`xPerm`  version \"\>", 
+   "\[InvisibleSpace]", "\<\"1.2.3\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
+  SequenceForm["Package xAct`xPerm`  version ", "1.2.3", ", ", {2015, 8, 23}],
+  
+  Editable->False]], "Print",
+ CellChangeTimes->{3.695384911120987*^9}],
+
+Cell[BoxData["\<\"CopyRight (C) 2003-2015, Jose M. Martin-Garcia, under the \
+General Public License.\"\>"], "Print",
+ CellChangeTimes->{3.6953849111252604`*^9}],
+
+Cell[BoxData["\<\"Connecting to external mac executable...\"\>"], "Print",
+ CellChangeTimes->{3.695384911156114*^9}],
+
+Cell[BoxData["\<\"Connection established.\"\>"], "Print",
+ CellChangeTimes->{3.695384911194789*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.695384911197844*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package xAct`xTensor`  version \"\>", 
+   "\[InvisibleSpace]", "\<\"1.1.2\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
+  SequenceForm[
+  "Package xAct`xTensor`  version ", "1.1.2", ", ", {2015, 8, 23}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.695384911200698*^9}],
+
+Cell[BoxData["\<\"CopyRight (C) 2002-2015, Jose M. Martin-Garcia, under the \
+General Public License.\"\>"], "Print",
+ CellChangeTimes->{3.695384911203718*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.695384911206478*^9}],
+
+Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
+details type Disclaimer[]. This is free software, and you are welcome to \
+redistribute it under certain conditions. See the General Public License for \
+details.\"\>"], "Print",
+ CellChangeTimes->{3.695384911209049*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.695384911212191*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.695384911405195*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package xAct`xCoba`  version \"\>", 
+   "\[InvisibleSpace]", "\<\"0.8.3\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
+  SequenceForm["Package xAct`xCoba`  version ", "0.8.3", ", ", {2015, 8, 23}],
+  
+  Editable->False]], "Print",
+ CellChangeTimes->{3.6953849114090633`*^9}],
+
+Cell[BoxData["\<\"CopyRight (C) 2005-2014, David Yllanes and Jose M. \
+Martin-Garcia, under the General Public License.\"\>"], "Print",
+ CellChangeTimes->{3.695384911412216*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.695384911415443*^9}],
+
+Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
+details type Disclaimer[]. This is free software, and you are welcome to \
+redistribute it under certain conditions. See the General Public License for \
+details.\"\>"], "Print",
+ CellChangeTimes->{3.695384911418195*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.6953849114212847`*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.6953849115790358`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package xAct`Spinors`  version \"\>", 
+   "\[InvisibleSpace]", "\<\"1.0.6\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"2014", ",", "9", ",", "28"}], "}"}]}],
+  SequenceForm[
+  "Package xAct`Spinors`  version ", "1.0.6", ", ", {2014, 9, 28}],
+  Editable->False]], "Print",
+ CellChangeTimes->{3.695384911582295*^9}],
+
+Cell[BoxData["\<\"CopyRight (C) 2006-2015, Alfonso Garcia-Parrado Gomez-Lobo \
+and Jose M. Martin-Garcia, under the General Public License.\"\>"], "Print",
+ CellChangeTimes->{3.695384911585286*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.69538491158806*^9}],
+
+Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
+details type Disclaimer[]. This is free software, and you are welcome to \
+redistribute it under certain conditions. See the General Public License for \
+details.\"\>"], "Print",
+ CellChangeTimes->{3.695384911591075*^9}],
+
+Cell[BoxData["\<\"------------------------------------------------------------\
+\"\>"], "Print",
+ CellChangeTimes->{3.6953849115939093`*^9}],
+
+Cell[BoxData["\<\"GAMMA Version 2.0\[Beta]\"\>"], "Print",
+ CellChangeTimes->{3.69538491159694*^9}],
+
+Cell[BoxData["\<\"9 December 2014\"\>"], "Print",
+ CellChangeTimes->{3.6953849115997133`*^9}],
+
+Cell[BoxData["\<\"\[Copyright] Ulf Gran, 2001\"\>"], "Print",
+ CellChangeTimes->{3.6953849116023283`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ASym", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"GammaProd", "[", 
+     RowBox[{"{", 
+      RowBox[{"a3", ",", "a2", ",", "a1"}], "}"}], "]"}], 
+    RowBox[{"GammaProd", "[", 
+     RowBox[{
+      RowBox[{"{", "b1", "}"}], ",", 
+      RowBox[{"{", "a2", "}"}]}], "]"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a1", ",", "a2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.695384914809066*^9, 3.695385064421199*^9}, {
+  3.695385130129974*^9, 3.6953851363932962`*^9}, {3.695385175842258*^9, 
+  3.695385222364502*^9}, {3.695385383443342*^9, 3.695385407799955*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "a3"}]], "**", 
+    SubscriptBox["\[CapitalGamma]", "b1"], "**", 
+    SubscriptBox["\[CapitalGamma]", "a2"]}],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{{3.69538499034121*^9, 3.695385006744453*^9}, 
+   3.695385065664186*^9, 3.695385136899122*^9, {3.695385200879867*^9, 
+   3.6953852229450073`*^9}, 3.695386892907658*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", "%11", "]"}]], "Input",
+ CellChangeTimes->{{3.695385240658101*^9, 3.6953852454689837`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", 
+    FractionBox["1", "2"]}], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a1"],
+    DisplayForm]}], "+", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a2"],
+    DisplayForm]}], "+", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   TagBox[
+    RowBox[{
+     SubscriptBox["\[CapitalGamma]", 
+      RowBox[{"a1", "b1"}]], "**", 
+     SubscriptBox["\[CapitalGamma]", "a2"]}],
+    DisplayForm]}], "-", 
+  RowBox[{
+   FractionBox["1", "2"], " ", 
+   TagBox[
+    RowBox[{
+     SubscriptBox["\[CapitalGamma]", 
+      RowBox[{"a2", "b1"}]], "**", 
+     SubscriptBox["\[CapitalGamma]", "a1"]}],
+    DisplayForm]}]}]], "Output",
+ CellChangeTimes->{3.6953852458906317`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a", ",", "b"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"c", ",", "d"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.695385410582005*^9, 3.695385507698266*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "2"}], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", 
+     RowBox[{"c", "d"}], 
+     RowBox[{"a", "b"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "d", "b"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a", "c"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "c", "b"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a", "d"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "d", "a"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"b", "c"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "c", "a"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"b", "d"}]],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a", "b", "c", "d"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{{3.695385440765251*^9, 3.695385458149784*^9}, {
+   3.695385492453012*^9, 3.69538550876519*^9}, 3.695386006624723*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"%", 
+  RowBox[{"GammaContract", "[", "%24", "]"}]}]], "Input",
+ CellChangeTimes->{{3.6953859669569283`*^9, 3.695386011588333*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"-", "2"}], " ", 
+     TagBox[
+      SubsuperscriptBox["\[Delta]", 
+       RowBox[{"c", "d"}], 
+       RowBox[{"a", "b"}]],
+      DisplayForm]}], "-", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "b"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a", "c"}]],
+      DisplayForm]}], "+", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "c", "b"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a", "d"}]],
+      DisplayForm]}], "+", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "a"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"b", "c"}]],
+      DisplayForm]}], "-", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "c", "a"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"b", "d"}]],
+      DisplayForm]}], "+", 
+    TagBox[
+     SubscriptBox["\[CapitalGamma]", 
+      RowBox[{"a", "b", "c", "d"}]],
+     DisplayForm]}], ")"}], "2"]], "Output",
+ CellChangeTimes->{{3.695385982525249*^9, 3.695386011962819*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", "d", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4"}], "}"}]}], "]"}], 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{"{", "d", "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.695385854278973*^9, 3.695385896433219*^9}, {
+  3.695385940731607*^9, 3.6953859468910522`*^9}, {3.6953860602359324`*^9, 
+  3.695386093566967*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", "d"],
+   DisplayForm], " ", 
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[CapitalGamma]", "d"], "**", 
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "a3", "a4"}]]}],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{
+  3.6953859007467403`*^9, {3.6953859418384447`*^9, 3.695385948272262*^9}, {
+   3.69538606772712*^9, 3.695386094000936*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", "%26", "]"}]], "Input",
+ CellChangeTimes->{{3.695385951034741*^9, 3.695385955850314*^9}, {
+  3.695386073379711*^9, 3.695386073963009*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", "a1"],
+   DisplayForm], "-", 
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "d"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "d"}]],
+    DisplayForm]}]}]], "Output",
+ CellChangeTimes->{3.6953859563444653`*^9, 3.6953860742620907`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GammaExpand", "[", 
+   RowBox[{"GammaProd", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4"}], "}"}], ",", 
+     RowBox[{"{", "d", "}"}]}], "]"}], "]"}], 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{"{", "d", "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.6953861222759657`*^9, 3.695386141649145*^9}, {
+  3.695386212357627*^9, 3.69538622038069*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", "d"],
+   DisplayForm], " ", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "a4"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a1", "a2", "a3"}]],
+      DisplayForm]}], "-", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "a3"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a1", "a2", "a4"}]],
+      DisplayForm]}], "+", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "a2"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a1", "a3", "a4"}]],
+      DisplayForm]}], "-", 
+    RowBox[{
+     TagBox[
+      SubsuperscriptBox["\[Delta]", "d", "a1"],
+      DisplayForm], " ", 
+     TagBox[
+      SubscriptBox["\[CapitalGamma]", 
+       RowBox[{"a2", "a3", "a4"}]],
+      DisplayForm]}], "+", 
+    TagBox[
+     SubscriptBox["\[CapitalGamma]", 
+      RowBox[{"a1", "a2", "a3", "a4", "d"}]],
+     DisplayForm]}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.6953861263815327`*^9, 3.695386142091495*^9}, 
+   3.695386221168953*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaContract", "[", "%32", "]"}]], "Input",
+ CellChangeTimes->{{3.695386240636245*^9, 3.69538626594233*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a4"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "a3"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a3"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "a4"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a3", "a4"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "a3", "a4"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "d"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "a3", "a4", "d"}]],
+    DisplayForm]}]}]], "Output",
+ CellChangeTimes->{3.6953862669255657`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"SpinorDim", "[", "16", "]"}], ";"}]], "Input",
+ CellChangeTimes->{{3.695387393727585*^9, 3.695387425911242*^9}, {
+  3.695387584717671*^9, 3.69538758821358*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"GammaProd", "[", 
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2"}], "}"}], "]"}], "**", 
+   RowBox[{"(", 
+    RowBox[{"1", "/", "32"}], ")"}]}], 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{"GammaProd", "[", 
+      RowBox[{"{", "c1", "}"}], "]"}], 
+     RowBox[{"TensorSpinor", "[", 
+      RowBox[{"\[Psi]", ",", 
+       RowBox[{"{", "}"}]}], "]"}], 
+     RowBox[{"GammaProd", "[", 
+      RowBox[{"{", "c1", "}"}], "]"}], 
+     RowBox[{"TensorSpinor", "[", 
+      RowBox[{"\[Psi]", ",", 
+       RowBox[{"{", "}"}]}], "]"}]}], ")"}], "**", 
+   RowBox[{"GammaProd", "[", 
+    RowBox[{"{", 
+     RowBox[{"a3", ",", "a4"}], "}"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.6953875090774384`*^9, 3.695387549284358*^9}, {
+  3.695387602653723*^9, 3.6953876103444357`*^9}, {3.695387779476981*^9, 
+  3.695387800299155*^9}, {3.695387882687461*^9, 3.6953880311385307`*^9}, {
+  3.695388192228882*^9, 3.6953881984521523`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "32"], " ", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2"}]],
+   DisplayForm], " ", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       TagBox[
+        SubscriptBox["\[CapitalGamma]", "c1"],
+        DisplayForm], ")"}], "2"], " ", 
+     SuperscriptBox[
+      TagBox[
+       OverscriptBox["\[Psi]", "~"],
+       DisplayForm], "2"]}], ")"}], "**", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a3", "a4"}]],
+    DisplayForm]}]}]], "Output",
+ CellChangeTimes->{
+  3.69538780307288*^9, {3.695388006781605*^9, 3.6953880316308804`*^9}, 
+   3.695388201900694*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"ASym", "[", 
+  RowBox[{"%43", ",", 
+   RowBox[{"{", 
+    RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4"}], "}"}]}], "]"}]], "Input",\
+
+ CellChangeTimes->{{3.695388036024036*^9, 3.69538804045918*^9}, {
+  3.695388137501623*^9, 3.6953881647396593`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "GAMMA`Private`AllIndices","arg","\"Unsupported argument.\"",2,47,7,
+   23724620962162292616,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.6953881656852207`*^9, 3.695388204286936*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    TagBox[
+     SubscriptBox["\[CapitalGamma]", "c1"],
+     DisplayForm], " ", 
+    SuperscriptBox[
+     TagBox[
+      OverscriptBox["\[Psi]", "~"],
+      DisplayForm], "2"]}], ")"}], "**", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a3", "a4"}]],
+   DisplayForm]}]], "Print",
+ CellChangeTimes->{3.695388165704722*^9, 3.6953882043036757`*^9}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{3.6953880408586884`*^9, 3.6953881657091312`*^9, 
+  3.695388204307721*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", "%46", "]"}]], "Input",
+ CellChangeTimes->{{3.695388211111827*^9, 3.695388220553879*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", "32"], " ", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2"}]],
+   DisplayForm], " ", 
+  RowBox[{
+   RowBox[{"(", 
+    RowBox[{
+     SuperscriptBox[
+      RowBox[{"(", 
+       TagBox[
+        SubscriptBox["\[CapitalGamma]", "c1"],
+        DisplayForm], ")"}], "2"], " ", 
+     SuperscriptBox[
+      TagBox[
+       OverscriptBox["\[Psi]", "~"],
+       DisplayForm], "2"]}], ")"}], "**", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a3", "a4"}]],
+    DisplayForm]}]}]], "Output",
+ CellChangeTimes->{3.695388221221313*^9}]
+}, Open  ]]
+},
+WindowSize->{808, 652},
+WindowMargins->{{Automatic, 212}, {-275, Automatic}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 119, 2, 32, "Input"],
+Cell[CellGroupData[{
+Cell[724, 28, 137, 2, 24, "Print"],
+Cell[864, 32, 410, 10, 24, "Print"],
+Cell[1277, 44, 161, 2, 24, "Print"],
+Cell[1441, 48, 116, 1, 24, "Print"],
+Cell[1560, 51, 99, 1, 24, "Print"],
+Cell[1662, 54, 138, 2, 24, "Print"],
+Cell[1803, 58, 414, 10, 24, "Print"],
+Cell[2220, 70, 159, 2, 24, "Print"],
+Cell[2382, 74, 138, 2, 24, "Print"],
+Cell[2523, 78, 293, 4, 63, "Print"],
+Cell[2819, 84, 138, 2, 24, "Print"],
+Cell[2960, 88, 138, 2, 24, "Print"],
+Cell[3101, 92, 412, 10, 24, "Print"],
+Cell[3516, 104, 177, 2, 44, "Print"],
+Cell[3696, 108, 138, 2, 24, "Print"],
+Cell[3837, 112, 293, 4, 63, "Print"],
+Cell[4133, 118, 140, 2, 24, "Print"],
+Cell[4276, 122, 140, 2, 24, "Print"],
+Cell[4419, 126, 414, 10, 24, "Print"],
+Cell[4836, 138, 197, 2, 44, "Print"],
+Cell[5036, 142, 137, 2, 24, "Print"],
+Cell[5176, 146, 293, 4, 63, "Print"],
+Cell[5472, 152, 140, 2, 24, "Print"],
+Cell[5615, 156, 99, 1, 24, "Print"],
+Cell[5717, 159, 93, 1, 24, "Print"],
+Cell[5813, 162, 105, 1, 24, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5967, 169, 586, 15, 32, "Input"],
+Cell[6556, 186, 440, 11, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7033, 202, 134, 2, 32, "Input"],
+Cell[7170, 206, 930, 35, 44, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8137, 246, 292, 8, 32, "Input"],
+Cell[8432, 256, 1199, 46, 34, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9668, 307, 154, 3, 32, "Input"],
+Cell[9825, 312, 1262, 47, 36, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11124, 364, 432, 11, 32, "Input"],
+Cell[11559, 377, 421, 13, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12017, 395, 181, 3, 32, "Input"],
+Cell[12201, 400, 362, 13, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12600, 418, 423, 11, 32, "Input"],
+Cell[13026, 431, 1220, 44, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14283, 480, 133, 2, 32, "Input"],
+Cell[14419, 484, 1069, 42, 32, "Output"]
+}, Open  ]],
+Cell[15503, 529, 195, 4, 32, "Input"],
+Cell[CellGroupData[{
+Cell[15723, 537, 971, 27, 75, "Input"],
+Cell[16697, 566, 678, 25, 45, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17412, 596, 273, 7, 32, "Input"],
+Cell[17688, 605, 240, 5, 24, "Message"],
+Cell[17931, 612, 411, 15, 31, "Print"],
+Cell[18345, 629, 128, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18510, 636, 132, 2, 32, "Input"],
+Cell[18645, 640, 602, 23, 79, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
