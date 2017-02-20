@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21922,        757]
-NotebookOptionsPosition[     19263,        666]
-NotebookOutlinePosition[     19625,        682]
-CellTagsIndexPosition[     19582,        679]
+NotebookDataLength[     70019,       2195]
+NotebookOptionsPosition[     66570,       2074]
+NotebookOutlinePosition[     66928,       2090]
+CellTagsIndexPosition[     66885,       2087]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,149 +21,1556 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell[BoxData[
- RowBox[{"<<", "Gamma.m"}]], "Input",
- CellChangeTimes->{{3.6953849076537046`*^9, 3.695384910384595*^9}}],
+ RowBox[{
+  RowBox[{"<<", "Gamma.m"}], ";"}]], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.6953849076537046`*^9, 3.695384910384595*^9}, 
+   3.69634159248225*^9}],
 
 Cell[CellGroupData[{
 
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.69538491111858*^9}],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"Package xAct`xPerm`  version \"\>", 
-   "\[InvisibleSpace]", "\<\"1.2.3\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
-   "\[InvisibleSpace]", 
-   RowBox[{"{", 
-    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
-  SequenceForm["Package xAct`xPerm`  version ", "1.2.3", ", ", {2015, 8, 23}],
-  
-  Editable->False]], "Print",
- CellChangeTimes->{3.695384911120987*^9}],
-
-Cell[BoxData["\<\"CopyRight (C) 2003-2015, Jose M. Martin-Garcia, under the \
-General Public License.\"\>"], "Print",
- CellChangeTimes->{3.6953849111252604`*^9}],
-
-Cell[BoxData["\<\"Connecting to external mac executable...\"\>"], "Print",
- CellChangeTimes->{3.695384911156114*^9}],
-
-Cell[BoxData["\<\"Connection established.\"\>"], "Print",
- CellChangeTimes->{3.695384911194789*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.695384911197844*^9}],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"Package xAct`xTensor`  version \"\>", 
-   "\[InvisibleSpace]", "\<\"1.1.2\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
-   "\[InvisibleSpace]", 
-   RowBox[{"{", 
-    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
-  SequenceForm[
-  "Package xAct`xTensor`  version ", "1.1.2", ", ", {2015, 8, 23}],
-  Editable->False]], "Print",
- CellChangeTimes->{3.695384911200698*^9}],
-
-Cell[BoxData["\<\"CopyRight (C) 2002-2015, Jose M. Martin-Garcia, under the \
-General Public License.\"\>"], "Print",
- CellChangeTimes->{3.695384911203718*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.695384911206478*^9}],
-
-Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
-details type Disclaimer[]. This is free software, and you are welcome to \
-redistribute it under certain conditions. See the General Public License for \
-details.\"\>"], "Print",
- CellChangeTimes->{3.695384911209049*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.695384911212191*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.695384911405195*^9}],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"Package xAct`xCoba`  version \"\>", 
-   "\[InvisibleSpace]", "\<\"0.8.3\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
-   "\[InvisibleSpace]", 
-   RowBox[{"{", 
-    RowBox[{"2015", ",", "8", ",", "23"}], "}"}]}],
-  SequenceForm["Package xAct`xCoba`  version ", "0.8.3", ", ", {2015, 8, 23}],
-  
-  Editable->False]], "Print",
- CellChangeTimes->{3.6953849114090633`*^9}],
-
-Cell[BoxData["\<\"CopyRight (C) 2005-2014, David Yllanes and Jose M. \
-Martin-Garcia, under the General Public License.\"\>"], "Print",
- CellChangeTimes->{3.695384911412216*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.695384911415443*^9}],
-
-Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
-details type Disclaimer[]. This is free software, and you are welcome to \
-redistribute it under certain conditions. See the General Public License for \
-details.\"\>"], "Print",
- CellChangeTimes->{3.695384911418195*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.6953849114212847`*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.6953849115790358`*^9}],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{"\<\"Package xAct`Spinors`  version \"\>", 
-   "\[InvisibleSpace]", "\<\"1.0.6\"\>", "\[InvisibleSpace]", "\<\", \"\>", 
-   "\[InvisibleSpace]", 
-   RowBox[{"{", 
-    RowBox[{"2014", ",", "9", ",", "28"}], "}"}]}],
-  SequenceForm[
-  "Package xAct`Spinors`  version ", "1.0.6", ", ", {2014, 9, 28}],
-  Editable->False]], "Print",
- CellChangeTimes->{3.695384911582295*^9}],
-
-Cell[BoxData["\<\"CopyRight (C) 2006-2015, Alfonso Garcia-Parrado Gomez-Lobo \
-and Jose M. Martin-Garcia, under the General Public License.\"\>"], "Print",
- CellChangeTimes->{3.695384911585286*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.69538491158806*^9}],
-
-Cell[BoxData["\<\"These packages come with ABSOLUTELY NO WARRANTY; for \
-details type Disclaimer[]. This is free software, and you are welcome to \
-redistribute it under certain conditions. See the General Public License for \
-details.\"\>"], "Print",
- CellChangeTimes->{3.695384911591075*^9}],
-
-Cell[BoxData["\<\"------------------------------------------------------------\
-\"\>"], "Print",
- CellChangeTimes->{3.6953849115939093`*^9}],
-
 Cell[BoxData["\<\"GAMMA Version 2.0\[Beta]\"\>"], "Print",
- CellChangeTimes->{3.69538491159694*^9}],
+ CellChangeTimes->{
+  3.69538491111858*^9, {3.6963416145947933`*^9, 3.6963416156384983`*^9}}],
 
 Cell[BoxData["\<\"9 December 2014\"\>"], "Print",
- CellChangeTimes->{3.6953849115997133`*^9}],
+ CellChangeTimes->{
+  3.69538491111858*^9, {3.6963416145947933`*^9, 3.696341615647573*^9}}],
 
 Cell[BoxData["\<\"\[Copyright] Ulf Gran, 2001\"\>"], "Print",
- CellChangeTimes->{3.6953849116023283`*^9}]
+ CellChangeTimes->{
+  3.69538491111858*^9, {3.6963416145947933`*^9, 3.696341615656789*^9}}]
 }, Open  ]]
 }, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Naito 1986- Gamma identities expansion", "Subtitle",
+ CellChangeTimes->{{3.696341787241336*^9, 3.696341850048277*^9}, 
+   3.696341934925234*^9, {3.696342151292315*^9, 3.6963421529956837`*^9}},
+ FontColor->RGBColor[1, 0, 0]],
+
+Cell["\<\
+Equation No. (1.4)
+If j=2, k=2\
+\>", "Text",
+ CellChangeTimes->{{3.6963419523922033`*^9, 3.69634202893326*^9}, {
+  3.696342260602166*^9, 3.696342262113907*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b1", ",", "b2"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.696342034376918*^9, 3.6963420667728653`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "2"}], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", 
+     RowBox[{"b1", "b2"}], 
+     RowBox[{"a1", "a2"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b2"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b2"}]],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2", "b1", "b2"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{3.696342067326676*^9}]
+}, Open  ]],
+
+Cell["\<\
+This show that the product between Gamma\[CloseCurlyQuote]s is antisymmetric, \
+for this notation\
+\>", "Text",
+ CellChangeTimes->{{3.6963422430817957`*^9, 3.69634231469693*^9}, {
+  3.696342945789188*^9, 3.696342949875448*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"ASym", "[", 
+   RowBox[{
+    RowBox[{"GammaProd", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a1", ",", "a2"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"b1", ",", "b2"}], "}"}]}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b1", ",", "b2"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6963420916523542`*^9, 3.696342125387439*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "2"}], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", 
+     RowBox[{"b1", "b2"}], 
+     RowBox[{"a1", "a2"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b2"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b2"}]],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2", "b1", "b2"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{{3.696342114279248*^9, 3.696342125882249*^9}}]
+}, Open  ]],
+
+Cell["If j = 3, k=3", "Text",
+ CellChangeTimes->{{3.696342194259152*^9, 3.6963422061059017`*^9}, {
+  3.696342265281609*^9, 3.696342267297514*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2", ",", "a3"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b1", ",", "b2", ",", "b3"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.696342226426778*^9, 3.696342231825016*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "6"}], " ", 
+   TagBox[
+    SubsuperscriptBox["\[Delta]", 
+     RowBox[{"b1", "b2", "b3"}], 
+     RowBox[{"a1", "a2", "a3"}]],
+    DisplayForm]}], "-", 
+  RowBox[{"2", " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b3"}], 
+        RowBox[{"a2", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a1", "b1"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b3"}], 
+        RowBox[{"a2", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a1", "b2"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b2"}], 
+        RowBox[{"a2", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a1", "b3"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b3"}], 
+        RowBox[{"a1", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a2", "b1"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b3"}], 
+        RowBox[{"a1", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a2", "b2"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b2"}], 
+        RowBox[{"a1", "a3"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a2", "b3"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b3"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a3", "b1"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b3"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a3", "b2"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b2"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"a3", "b3"}]],
+       DisplayForm]}]}], ")"}]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b3", "a3"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "b1", "b2"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a3"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "b1", "b3"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a3"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2", "b2", "b3"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b3", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a3", "b1", "b2"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a3", "b1", "b3"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a3", "b2", "b3"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b3", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "a3", "b1", "b2"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "a3", "b1", "b3"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "a3", "b2", "b3"}]],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2", "a3", "b1", "b2", "b3"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{3.696342232549148*^9}]
+}, Open  ]],
+
+Cell["If j = 10, k = 10", "Text",
+ CellChangeTimes->{{3.696342354217928*^9, 3.696342392198436*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "a1", ",", "a2", ",", "a3", ",", "a4", ",", "a5", ",", "a6", ",", "a7", 
+      ",", "a8", ",", "a9", ",", "a10"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "b1", ",", "b2", ",", "b3", ",", "b4", ",", "b5", ",", "b6", ",", "b7", 
+      ",", "b8", ",", "b9", ",", "b10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6963424057264967`*^9, 3.696342432125885*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{
+          RowBox[{
+           RowBox[{"-", "3628800"}], " ", 
+           TagBox[
+            SubsuperscriptBox["\[Delta]", 
+             RowBox[{
+             "b1", "b10", "b2", "b3", "b4", "b5", "b6", "b7", "b8", "b9"}], 
+             RowBox[{
+             "a1", "a10", "a2", "a3", "a4", "a5", "a6", "a7", "a8", "a9"}]],
+            DisplayForm]}], "-", 
+          RowBox[{"362880", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             TemplateBox[{"149"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                TemplateBox[{"1"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, 
+                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                   RoundingRadius -> 7]& )], 
+                TemplateBox[{"1"},
+                 "OutputSizeLimit`Skeleton",
+                 DisplayFunction->(FrameBox[
+                   
+                   RowBox[{
+                    "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                   Background -> GrayLevel[0.75], 
+                   BaseStyle -> {
+                    "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                   Baseline, ContentPadding -> False, 
+                   FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                   RoundingRadius -> 7]& )]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"a9", "b9"}]],
+               DisplayForm]}]}], ")"}]}], "+", 
+          RowBox[{"40320", " ", 
+           RowBox[{"(", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+               Background -> GrayLevel[0.75], 
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], ")"}]}], "+", 
+          RowBox[{"5040", " ", 
+           RowBox[{"(", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+               Background -> GrayLevel[0.75], 
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], ")"}]}], "-", 
+          RowBox[{"720", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             TemplateBox[{"66099"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], "+", 
+             RowBox[{
+              TagBox[
+               TemplateBox[{"1"},
+                "OutputSizeLimit`Skeleton",
+                DisplayFunction->(FrameBox[
+                  
+                  RowBox[{
+                   "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                  Background -> GrayLevel[0.75], 
+                  BaseStyle -> {
+                   "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                    ShowStringCharacters -> False}, BaselinePosition -> 
+                  Baseline, ContentPadding -> False, 
+                  FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                  RoundingRadius -> 7]& )],
+               DisplayForm], " ", 
+              TemplateBox[{"1"},
+               "OutputSizeLimit`Skeleton",
+               DisplayFunction->(FrameBox[
+                 
+                 RowBox[{
+                  "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                 Background -> GrayLevel[0.75], 
+                 BaseStyle -> {
+                  "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                   ShowStringCharacters -> False}, BaselinePosition -> 
+                 Baseline, ContentPadding -> False, 
+                 FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                 RoundingRadius -> 7]& )]}]}], ")"}]}], "-", 
+          RowBox[{"120", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b5", "b6", "b7", "b8", "b9"}], 
+                RowBox[{"a5", "a6", "a7", "a8", "a9"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a1", "a10", "a2", "a3", "a4", "b1", "b10", "b2", "b3", 
+                 "b4"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b4", "b6", "b7", "b8", "b9"}], 
+                RowBox[{"a5", "a6", "a7", "a8", "a9"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a1", "a10", "a2", "a3", "a4", "b1", "b10", "b2", "b3", 
+                 "b5"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b4", "b5", "b7", "b8", "b9"}], 
+                RowBox[{"a5", "a6", "a7", "a8", "a9"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a1", "a10", "a2", "a3", "a4", "b1", "b10", "b2", "b3", 
+                 "b6"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b4", "b5", "b6", "b8", "b9"}], 
+                RowBox[{"a5", "a6", "a7", "a8", "a9"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a1", "a10", "a2", "a3", "a4", "b1", "b10", "b2", "b3", 
+                 "b7"}]],
+               DisplayForm]}], "+", 
+             TemplateBox[{"95246"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b6"}], 
+                RowBox[{"a1", "a10", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a5", "a6", "a7", "a8", "a9", "b4", "b5", "b7", "b8", "b9"}]],
+               
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b5"}], 
+                RowBox[{"a1", "a10", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a5", "a6", "a7", "a8", "a9", "b4", "b6", "b7", "b8", "b9"}]],
+               
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4"}], 
+                RowBox[{"a1", "a10", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{
+                "a5", "a6", "a7", "a8", "a9", "b5", "b6", "b7", "b8", "b9"}]],
+               
+               DisplayForm]}]}], ")"}]}]}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 8, 23730890496508904805, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 8, 23730890496508904805, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 8, 23730890496508904805, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[8]]], "Output",
+ CellChangeTimes->{3.696342477710833*^9}]
+}, Open  ]],
+
+Cell["Now odd index ", "Text",
+ CellChangeTimes->{{3.696342499310649*^9, 3.6963425287624063`*^9}}],
+
+Cell["If j = 1, k = 2", "Text",
+ CellChangeTimes->{{3.696342601977118*^9, 3.696342616378991*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", "a1", "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b1", ",", "b2"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.696342627428484*^9, 3.6963426279794292`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", 
+    TagBox[
+     SubsuperscriptBox["\[Delta]", "b2", "a1"],
+     DisplayForm]}], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "b1"],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", "b2"],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "b1", "b2"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{3.696342631245688*^9}]
+}, Open  ]],
+
+Cell["If j = 2, k = 5", "Text",
+ CellChangeTimes->{{3.696342642198621*^9, 3.696342642199854*^9}, {
+  3.696342710522771*^9, 3.696342727618456*^9}, {3.696342785805149*^9, 
+  3.696342785955518*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"b1", ",", "b2", ",", "b3", ",", "b4", ",", "b5"}], "}"}]}], 
+   "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.696342772895666*^9, 3.6963427895638638`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "2"}], " ", 
+   RowBox[{"(", 
+    RowBox[{
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b4", "b5"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b2", "b3"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b3", "b5"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b2", "b4"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b3", "b4"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b2", "b5"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b5"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b3", "b4"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b4"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b3", "b5"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b2", "b3"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b1", "b4", "b5"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b5"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b2", "b3", "b4"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b4"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b2", "b3", "b5"}]],
+       DisplayForm]}], "-", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b3"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b2", "b4", "b5"}]],
+       DisplayForm]}], "+", 
+     RowBox[{
+      TagBox[
+       SubsuperscriptBox["\[Delta]", 
+        RowBox[{"b1", "b2"}], 
+        RowBox[{"a1", "a2"}]],
+       DisplayForm], " ", 
+      TagBox[
+       SubscriptBox["\[CapitalGamma]", 
+        RowBox[{"b3", "b4", "b5"}]],
+       DisplayForm]}]}], ")"}]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b5", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1", "b2", "b3", "b4"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b4", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1", "b2", "b3", "b5"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b3", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1", "b2", "b4", "b5"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b1", "b3", "b4", "b5"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a2"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "b2", "b3", "b4", "b5"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b5", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1", "b2", "b3", "b4"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b4", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1", "b2", "b3", "b5"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b3", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1", "b2", "b4", "b5"}]],
+    DisplayForm]}], "+", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b2", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b1", "b3", "b4", "b5"}]],
+    DisplayForm]}], "-", 
+  RowBox[{
+   TagBox[
+    SubsuperscriptBox["\[Delta]", "b1", "a1"],
+    DisplayForm], " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a2", "b2", "b3", "b4", "b5"}]],
+    DisplayForm]}], "+", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2", "b1", "b2", "b3", "b4", "b5"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{{3.696342777983588*^9, 3.696342790344181*^9}}]
+}, Open  ]],
+
+Cell["If j=4, k=10", "Text",
+ CellChangeTimes->{{3.696342808523904*^9, 3.696342822842098*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GammaExpand", "[", 
+  RowBox[{"GammaProd", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "b1", ",", "b2", ",", "b3", ",", "b4", ",", "b5", ",", "b6", ",", "b7", 
+      ",", "b8", ",", "b9", ",", "b10"}], "}"}]}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6963428318914423`*^9, 3.696342856634941*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  TagBox[
+   FrameBox[GridBox[{
+      {
+       ItemBox[
+        TagBox[
+         RowBox[{
+          RowBox[{"24", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b6", "b7", "b8", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4", "b5"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b5", "b7", "b8", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4", "b6"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b5", "b6", "b8", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4", "b7"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b5", "b6", "b7", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4", "b8"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b5", "b6", "b7", "b8"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b4", "b9"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b4", "b7", "b8", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b5", "b6"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b4", "b6", "b8", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b1", "b10", "b2", "b3", "b5", "b7"}]],
+               DisplayForm]}], "+", 
+             TemplateBox[{"290"},
+              "OutputSizeLimit`Skeleton",
+              DisplayFunction->(FrameBox[
+                
+                RowBox[{
+                 "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+                Background -> GrayLevel[0.75], 
+                BaseStyle -> {
+                 "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                  ShowStringCharacters -> False}, BaselinePosition -> 
+                Baseline, ContentPadding -> False, 
+                FrameMargins -> {{1, 1}, {1, 2}}, FrameStyle -> None, 
+                RoundingRadius -> 7]& )], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b9"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b4", "b5", "b6", "b7", "b8"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b8"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b4", "b5", "b6", "b7", "b9"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b7"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b4", "b5", "b6", "b8", "b9"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b6"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b4", "b5", "b7", "b8", "b9"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b5"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b4", "b6", "b7", "b8", "b9"}]],
+               DisplayForm]}], "-", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b4"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b3", "b5", "b6", "b7", "b8", "b9"}]],
+               DisplayForm]}], "+", 
+             RowBox[{
+              TagBox[
+               SubsuperscriptBox["\[Delta]", 
+                RowBox[{"b1", "b10", "b2", "b3"}], 
+                RowBox[{"a1", "a2", "a3", "a4"}]],
+               DisplayForm], " ", 
+              TagBox[
+               SubscriptBox["\[CapitalGamma]", 
+                RowBox[{"b4", "b5", "b6", "b7", "b8", "b9"}]],
+               DisplayForm]}]}], ")"}]}], "+", 
+          RowBox[{"6", " ", 
+           RowBox[{"(", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+               Background -> GrayLevel[0.75], 
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], ")"}]}], "-", 
+          RowBox[{"2", " ", 
+           RowBox[{"(", 
+            TemplateBox[{"1"},
+             "OutputSizeLimit`Skeleton",
+             DisplayFunction->(FrameBox[
+               
+               RowBox[{
+                "\" \[CenterEllipsis]\"", #, "\"\[CenterEllipsis] \""}], 
+               Background -> GrayLevel[0.75], 
+               BaseStyle -> {
+                "Deploy", FontColor -> GrayLevel[1], FontSize -> Smaller, 
+                 ShowStringCharacters -> False}, BaselinePosition -> Baseline,
+                ContentPadding -> False, FrameMargins -> {{1, 1}, {1, 2}}, 
+               FrameStyle -> None, RoundingRadius -> 7]& )], ")"}]}]}],
+         Short[#, 5]& ],
+        BaseStyle->{Deployed -> False},
+        StripOnInput->False]},
+      {GridBox[{
+         {
+          TagBox[
+           TooltipBox[
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource[
+                "FEStrings", "sizeBriefExplanation"], StandardForm],
+               ImageSizeCache->{58., {2., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarCategory",
+             StripOnInput->False],
+            StyleBox[
+             DynamicBox[
+              ToBoxes[
+               FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"], 
+               StandardForm]], DynamicUpdating -> True, StripOnInput -> 
+             False]],
+           Annotation[#, 
+            Style[
+             Dynamic[
+              FEPrivate`FrontEndResource["FEStrings", "sizeExplanation"]], 
+             DynamicUpdating -> True], "Tooltip"]& ], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowLess"], 
+                StandardForm],
+               ImageSizeCache->{50., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 12, 23730890496508904805, 5/2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowMore"], 
+                StandardForm],
+               ImageSizeCache->{56., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 12, 23730890496508904805, 5 2],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm],
+               ImageSizeCache->{42., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeShowAll"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           
+           ButtonFunction:>OutputSizeLimit`ButtonFunction[
+            OutputSizeLimit`Defer, 12, 23730890496508904805, Infinity],
+           Enabled->True,
+           Evaluator->Automatic,
+           Method->"Queued"], 
+          ButtonBox[
+           PaneSelectorBox[{False->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm],
+               ImageSizeCache->{74., {0., 8.}}],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControl",
+             StripOnInput->False], True->
+            StyleBox[
+             StyleBox[
+              DynamicBox[ToBoxes[
+                FEPrivate`FrontEndResource["FEStrings", "sizeChangeLimit"], 
+                StandardForm]],
+              StripOnInput->False,
+              DynamicUpdating->True], "SuggestionsBarControlActive",
+             StripOnInput->False]}, Dynamic[
+             CurrentValue["MouseOver"]],
+            Alignment->Center,
+            FrameMargins->0,
+            ImageSize->{Automatic, 25}],
+           Appearance->None,
+           ButtonFunction:>FrontEndExecute[{
+              FrontEnd`SetOptions[
+              FrontEnd`$FrontEnd, 
+               FrontEnd`PreferencesSettings -> {"Page" -> "Evaluation"}], 
+              FrontEnd`FrontEndToken["PreferencesDialog"]}],
+           Evaluator->None,
+           Method->"Preemptive"]}
+        },
+        AutoDelete->False,
+        FrameStyle->GrayLevel[0.85],
+        GridBoxDividers->{"Columns" -> {False, {True}}},
+        GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
+        GridBoxSpacings->{"Columns" -> {{2}}}]}
+     },
+     DefaultBaseStyle->"Column",
+     GridBoxAlignment->{
+      "Columns" -> {{Left}}, "ColumnsIndexed" -> {}, "Rows" -> {{Baseline}}, 
+       "RowsIndexed" -> {}},
+     GridBoxDividers->{
+      "Columns" -> {{False}}, "ColumnsIndexed" -> {}, "Rows" -> {{False}}, 
+       "RowsIndexed" -> {}},
+     GridBoxItemSize->{
+      "Columns" -> {{Automatic}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+       "RowsIndexed" -> {}},
+     GridBoxSpacings->{"Columns" -> {
+         Offset[0.27999999999999997`], {
+          Offset[0.5599999999999999]}, 
+         Offset[0.27999999999999997`]}, "ColumnsIndexed" -> {}, "Rows" -> {
+         Offset[0.2], 
+         Offset[1.2], {
+          Offset[0.4]}, 
+         Offset[0.2]}, "RowsIndexed" -> {}}],
+    Background->RGBColor[0.9657, 0.9753, 0.9802],
+    FrameMargins->{{12, 12}, {0, 15}},
+    FrameStyle->GrayLevel[0.85],
+    RoundingRadius->5,
+    StripOnInput->False],
+   Deploy,
+   DefaultBaseStyle->"Deploy"],
+  Out[12]]], "Output",
+ CellChangeTimes->{3.696342857951305*^9}]
+}, Open  ]],
+
+Cell["Equation No. (1.5)", "Text",
+ CellChangeTimes->{{3.6963431547099037`*^9, 3.696343177325008*^9}}],
+
+Cell["\<\
+d depend of setup dimension space SetDim[11] ,SetDim[10],... 
+j = 1,..n.\
+\>", "Text",
+ CellChangeTimes->{{3.6963432985939903`*^9, 3.696343310162944*^9}, {
+  3.696343391117865*^9, 3.6963433987276993`*^9}, {3.696343452374166*^9, 
+  3.69634355131457*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GammaExpand", "[", 
+   RowBox[{
+    RowBox[{"GammaProd", "[", 
+     RowBox[{"{", "d", "}"}], "]"}], "**", 
+    RowBox[{"GammaProd", "[", 
+     RowBox[{"{", 
+      RowBox[{"d", ",", "a1", ",", "a2"}], "}"}], "]"}]}], "]"}], "//", 
+  "GammaContract"}]], "Input",
+ CellChangeTimes->{{3.696343199666999*^9, 3.6963432354131737`*^9}, {
+  3.6963437969229918`*^9, 3.696343802600503*^9}}],
+
+Cell[BoxData[
+ RowBox[{"9", " ", 
+  TagBox[
+   SubscriptBox["\[CapitalGamma]", 
+    RowBox[{"a1", "a2"}]],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{
+  3.6963432416676407`*^9, {3.69634330643825*^9, 3.696343314869072*^9}, 
+   3.6963438030350533`*^9}]
+}, Open  ]],
+
+Cell["\<\
+Equation No. (1.6)
+This notation not have account the permutations from the antisymmetric \
+product
+j = 1,..n.\
+\>", "Text",
+ CellChangeTimes->{{3.6963441908186073`*^9, 3.6963442920769377`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"GammaExpand", "[", 
+   RowBox[{
+    RowBox[{"GammaProd", "[", 
+     RowBox[{"{", "d", "}"}], "]"}], "**", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"GammaProd", "[", 
+       RowBox[{"{", 
+        RowBox[{"a1", ",", "a2"}], "}"}], "]"}], "**", 
+      RowBox[{"GammaProd", "[", 
+       RowBox[{"{", "d", "}"}], "]"}]}], ")"}]}], "]"}], "//", 
+  "GammaContract"}]], "Input",
+ CellChangeTimes->{{3.696343558155663*^9, 3.6963436242729053`*^9}, {
+  3.696343673292749*^9, 3.696343684418736*^9}, {3.696343901928884*^9, 
+  3.6963440133534203`*^9}, {3.696344047304742*^9, 3.696344074151533*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"9", " ", 
+   TagBox[
+    SubscriptBox["\[CapitalGamma]", 
+     RowBox[{"a1", "a2"}]],
+    DisplayForm]}], "-", 
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[CapitalGamma]", "a1"], "**", 
+    SubscriptBox["\[CapitalGamma]", "a2"]}],
+   DisplayForm], "+", 
+  TagBox[
+   RowBox[{
+    SubscriptBox["\[CapitalGamma]", "a2"], "**", 
+    SubscriptBox["\[CapitalGamma]", "a1"]}],
+   DisplayForm]}]], "Output",
+ CellChangeTimes->{{3.696343992509033*^9, 3.696344013824538*^9}, {
+  3.696344065684051*^9, 3.6963440746623507`*^9}}]
+}, Open  ]],
+
+Cell["Equation No. (1.7)", "Text",
+ CellChangeTimes->{{3.696344402376616*^9, 3.696344411112337*^9}}],
+
+Cell[BoxData[
+ RowBox[{"GammaProd", "[", 
+  RowBox[{"{", 
+   RowBox[{"a1", ",", "a2", ",", "a3", ",", "a4"}], "}"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6963444429364433`*^9, 3.696344493986046*^9}}],
 
 Cell[CellGroupData[{
 
@@ -663,9 +2070,10 @@ Cell[BoxData[
     DisplayForm]}]}]], "Output",
  CellChangeTimes->{3.695388221221313*^9}]
 }, Open  ]]
+}, Open  ]]
 },
-WindowSize->{808, 652},
-WindowMargins->{{Automatic, 212}, {-275, Automatic}},
+WindowSize->{1280, 504},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -682,86 +2090,114 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 119, 2, 32, "Input"],
+Cell[580, 22, 189, 5, 48, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[724, 28, 137, 2, 24, "Print"],
-Cell[864, 32, 410, 10, 24, "Print"],
-Cell[1277, 44, 161, 2, 24, "Print"],
-Cell[1441, 48, 116, 1, 24, "Print"],
-Cell[1560, 51, 99, 1, 24, "Print"],
-Cell[1662, 54, 138, 2, 24, "Print"],
-Cell[1803, 58, 414, 10, 24, "Print"],
-Cell[2220, 70, 159, 2, 24, "Print"],
-Cell[2382, 74, 138, 2, 24, "Print"],
-Cell[2523, 78, 293, 4, 63, "Print"],
-Cell[2819, 84, 138, 2, 24, "Print"],
-Cell[2960, 88, 138, 2, 24, "Print"],
-Cell[3101, 92, 412, 10, 24, "Print"],
-Cell[3516, 104, 177, 2, 44, "Print"],
-Cell[3696, 108, 138, 2, 24, "Print"],
-Cell[3837, 112, 293, 4, 63, "Print"],
-Cell[4133, 118, 140, 2, 24, "Print"],
-Cell[4276, 122, 140, 2, 24, "Print"],
-Cell[4419, 126, 414, 10, 24, "Print"],
-Cell[4836, 138, 197, 2, 44, "Print"],
-Cell[5036, 142, 137, 2, 24, "Print"],
-Cell[5176, 146, 293, 4, 63, "Print"],
-Cell[5472, 152, 140, 2, 24, "Print"],
-Cell[5615, 156, 99, 1, 24, "Print"],
-Cell[5717, 159, 93, 1, 24, "Print"],
-Cell[5813, 162, 105, 1, 24, "Print"]
+Cell[794, 31, 152, 2, 24, "Print"],
+Cell[949, 35, 141, 2, 24, "Print"],
+Cell[1093, 39, 153, 2, 24, "Print"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5967, 169, 586, 15, 32, "Input"],
-Cell[6556, 186, 440, 11, 32, "Output"]
+Cell[1295, 47, 229, 3, 51, "Subtitle"],
+Cell[1527, 52, 170, 5, 49, "Text"],
+Cell[CellGroupData[{
+Cell[1722, 61, 298, 8, 32, "Input"],
+Cell[2023, 71, 1128, 45, 34, "Output"]
+}, Open  ]],
+Cell[3166, 119, 237, 5, 30, "Text"],
+Cell[CellGroupData[{
+Cell[3428, 128, 418, 12, 32, "Input"],
+Cell[3849, 142, 1152, 45, 34, "Output"]
+}, Open  ]],
+Cell[5016, 190, 146, 2, 30, "Text"],
+Cell[CellGroupData[{
+Cell[5187, 196, 318, 8, 32, "Input"],
+Cell[5508, 206, 4718, 178, 57, "Output"]
+}, Open  ]],
+Cell[10241, 387, 99, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[10365, 392, 502, 12, 32, "Input"],
+Cell[10870, 406, 17333, 423, 153, "Output"]
+}, Open  ]],
+Cell[28218, 832, 98, 1, 30, "Text"],
+Cell[28319, 835, 97, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[28441, 840, 271, 7, 32, "Input"],
+Cell[28715, 849, 542, 21, 34, "Output"]
+}, Open  ]],
+Cell[29272, 873, 195, 3, 30, "Text"],
+Cell[CellGroupData[{
+Cell[29492, 880, 335, 9, 32, "Input"],
+Cell[29830, 891, 5183, 190, 57, "Output"]
+}, Open  ]],
+Cell[35028, 1084, 94, 1, 30, "Text"],
+Cell[CellGroupData[{
+Cell[35147, 1089, 422, 10, 32, "Input"],
+Cell[35572, 1101, 14843, 375, 141, "Output"]
+}, Open  ]],
+Cell[50430, 1479, 102, 1, 30, "Text"],
+Cell[50535, 1482, 263, 6, 49, "Text"],
+Cell[CellGroupData[{
+Cell[50823, 1492, 414, 11, 32, "Input"],
+Cell[51240, 1505, 256, 8, 32, "Output"]
+}, Open  ]],
+Cell[51511, 1516, 204, 6, 68, "Text"],
+Cell[CellGroupData[{
+Cell[51740, 1526, 625, 16, 32, "Input"],
+Cell[52368, 1544, 550, 18, 32, "Output"]
+}, Open  ]],
+Cell[52933, 1565, 100, 1, 30, "Text"],
+Cell[53036, 1568, 201, 4, 32, "Input"],
+Cell[CellGroupData[{
+Cell[53262, 1576, 586, 15, 32, "Input"],
+Cell[53851, 1593, 440, 11, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[7033, 202, 134, 2, 32, "Input"],
-Cell[7170, 206, 930, 35, 44, "Output"]
+Cell[54328, 1609, 134, 2, 32, "Input"],
+Cell[54465, 1613, 930, 35, 44, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8137, 246, 292, 8, 32, "Input"],
-Cell[8432, 256, 1199, 46, 34, "Output"]
+Cell[55432, 1653, 292, 8, 32, "Input"],
+Cell[55727, 1663, 1199, 46, 34, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9668, 307, 154, 3, 32, "Input"],
-Cell[9825, 312, 1262, 47, 36, "Output"]
+Cell[56963, 1714, 154, 3, 32, "Input"],
+Cell[57120, 1719, 1262, 47, 36, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11124, 364, 432, 11, 32, "Input"],
-Cell[11559, 377, 421, 13, 32, "Output"]
+Cell[58419, 1771, 432, 11, 32, "Input"],
+Cell[58854, 1784, 421, 13, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12017, 395, 181, 3, 32, "Input"],
-Cell[12201, 400, 362, 13, 32, "Output"]
+Cell[59312, 1802, 181, 3, 32, "Input"],
+Cell[59496, 1807, 362, 13, 32, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[12600, 418, 423, 11, 32, "Input"],
-Cell[13026, 431, 1220, 44, 35, "Output"]
+Cell[59895, 1825, 423, 11, 32, "Input"],
+Cell[60321, 1838, 1220, 44, 35, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14283, 480, 133, 2, 32, "Input"],
-Cell[14419, 484, 1069, 42, 32, "Output"]
+Cell[61578, 1887, 133, 2, 32, "Input"],
+Cell[61714, 1891, 1069, 42, 32, "Output"]
 }, Open  ]],
-Cell[15503, 529, 195, 4, 32, "Input"],
+Cell[62798, 1936, 195, 4, 32, "Input"],
 Cell[CellGroupData[{
-Cell[15723, 537, 971, 27, 75, "Input"],
-Cell[16697, 566, 678, 25, 45, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[17412, 596, 273, 7, 32, "Input"],
-Cell[17688, 605, 240, 5, 24, "Message"],
-Cell[17931, 612, 411, 15, 31, "Print"],
-Cell[18345, 629, 128, 2, 32, "Output"]
+Cell[63018, 1944, 971, 27, 32, "Input"],
+Cell[63992, 1973, 678, 25, 45, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[18510, 636, 132, 2, 32, "Input"],
-Cell[18645, 640, 602, 23, 79, "Output"]
+Cell[64707, 2003, 273, 7, 32, "Input"],
+Cell[64983, 2012, 240, 5, 24, "Message"],
+Cell[65226, 2019, 411, 15, 31, "Print"],
+Cell[65640, 2036, 128, 2, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[65805, 2043, 132, 2, 32, "Input"],
+Cell[65940, 2047, 602, 23, 45, "Output"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
