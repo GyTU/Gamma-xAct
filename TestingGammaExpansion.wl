@@ -1,61 +1,51 @@
 (* ::Package:: *)
 
-(* ::Input::Initialization:: *)
+(* ::Code::Initialization:: *)
 <<Gamma.m
 
 
-(* ::Input::Initialization:: *)
-DefManifold[M,11,{a,b,c,d,e,f}];
-DefMetric[-1,g[-a,-b ],CD,{";","\[Del]"}];
-DefTensor[gamma[ ],M,PrintAs->"\[CapitalGamma]"];
+(* ::Code::Initialization:: *)
+DefManifold[M, 11,{a, b, c, d, e, f}];
+DefMetric[-1, g[-a, -b], CD, {";", "\[Del]"}];
+DefTensor[gamma[], M, PrintAs -> "\[CapitalGamma]"];
 
 
-(* ::Input::Initialization:: *)
-CombineListsGamma[neg_List,pos_List]:=Join[-neg,pos];
-TransDeltaGamma[expr_]:=If[expr[[0]]===DeltaGamma,
-Gdelta@@CombineListsGamma[expr[[1]],expr[[2]]],
-expr
+(* ::Code::Initialization:: *)
+CombineListsGamma[neg_List, pos_List] := Join[-neg, pos];
+
+TransDeltaGamma[expr_DeltaGamma] := Gdelta @@ CombineListsGamma[expr[[1]],expr[[2]]];
+TransDeltaGamma[expr_] := expr;
+
+ReplaceDeltaGamma[expr_DeltaGamma] := TransDeltaGamma[expr];
+ReplaceDeltaGamma[expr_] := Head[expr] @@ ReplaceDeltaGamma /@ List @@ expr;
+
+
+(* ::Code::Initialization:: *)
+TransGammaProd[expr_GammaProd] := Times @@ ((gamma@@-#)& /@ (List @@ expr));
+TransGammaProd[expr_GammaProd] := expr;
+
+ReplaceGammaProd[expr_GammaProd] := TransGammaProd[expr];
+ReplaceGammaProd[expr_] := Head[expr] @@ ReplaceGammaProd /@ List @@ expr;
+
+ReplaceGammaProd[GammaExpand @ GammaProd[{a,b},{c,d}]] // InputForm
+
+
+(* ::Code::Initialization:: *)
+SelectNegativeSymbols[l_] := Select[l, (Characters@ToString@#)[[1]] == "-"&];
+SelectPositiveSymbols[l_] := Select[l, (Characters@ToString@#)[[1]]!="-"&];
+
+TransGdelta[expr_Gdelta | expr_delta] := DeltaGamma[
+  -SelectNegativeSymbols[List @@ expr], SelectPositiveSymbols[List @@ expr]
 ];
+TransGDelta[expr_] := expr;
 
-ReplaceDeltaGamma[expr_]:= If[expr[[0]]===DeltaGamma,
-TransDeltaGamma[expr],
-expr[[0]]@@ReplaceDeltaGamma/@List@@expr
-];
-
-
-(* ::Input::Initialization:: *)
-TransGammaProd[expr_]:=If[expr[[0]]===GammaProd,
-Times@@((gamma@@-#)&/@(List@@expr)),
-expr
-];
-
-ReplaceGammaProd[expr_]:= If[expr[[0]]===GammaProd,
-TransGammaProd[expr],
-expr[[0]]@@ReplaceGammaProd/@List@@expr
-];
+ReplaceGdelta[expr_Gdelta | expr_delta] := TransGdelta[expr];
+ReplaceGDelta[expr_] := Head[expr] @@ ReplaceGdelta /@ List @@ expr;
 
 
-(* ::Input::Initialization:: *)
-SelectNegativeSymbols[l_]:=Select[l,(Characters@ToString@#)[[1]]=="-"&];
-SelectPositiveSymbols[l_]:=Select[l,(Characters@ToString@#)[[1]]!="-"&];
-TransGdelta[expr_]:=If[expr[[0]]===Gdelta||expr[[0]]===delta,
-DeltaGamma[-SelectNegativeSymbols[List@@expr],SelectPositiveSymbols[List@@expr]],
-expr
-];
+(* ::Code::Initialization:: *)
+TransGamma[expr_Gamma] := GammaProd[-List @@ expr];
+TransGamma[expr_] := expr;
 
-ReplaceGdelta[expr_]:= If[expr[[0]]===Gdelta||expr[[0]]===delta,
-TransGdelta[expr],
-expr[[0]]@@ReplaceGdelta/@List@@expr
-];
-
-
-(* ::Input::Initialization:: *)
-TransGamma[expr_]:=If[expr[[0]]===gamma,
-GammaProd[-List@@expr],
-expr
-];
-
-ReplaceGamma[expr_]:= If[expr[[0]]===gamma,
-TransGamma[expr],
-expr[[0]]@@ReplaceGamma/@List@@expr
-];
+ReplaceGamma[expr_gamma] := TransGamma[expr];
+ReplaceGamma[expr_] := Head[expr] @@ ReplaceGamma /@ List @@ expr;
